@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$cl-main-bg: #FFFFFF;
+$cl-orange: #FFA640;
+$cl-blue: #002C71;
+
+
+div.component{
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  width: 500px;
+  height: 800px;
+  margin: 100px auto 300px auto;
+  padding: 36px 10px 0px 10px;
+  position: relative;
+  background: $cl-main-bg;
+  box-shadow: 0 0 4px rgba(172,172,172, 0.5);
+  div.top-bg-bar{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: $cl-blue;
+    height: 95px;
+    z-index: 1;
+    border-radius: 5px 5px 0 0;
+  }
+  div.main{
+    position: absolute;
+    top: 36px;
+    left: 15px;
+    right: 15px;
+    z-index: 2;
+    div.top, div.comments{
+      position: static;
+      border-radius: 5px;
+      box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+      background: $cl-main-bg;
+    }
+    div.top{
+      height: 183px;
+      padding: 20px 22px 20px 26px;
+      margin-bottom: 10px;
+      div.row{
+        div.avatar{
+          border-radius: 100%;
+          width: 70px;
+          height: 70px;
+          float: left;
+          background-image: url('../images/harvey.jpg');
+          background-position: 40% 10%;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        div.info{
+          position: relative;
+          float: left;
+          overflow: hidden;
+          padding-left: 20px;
+          height: 70px;
+          width: 300px;
+          div{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            span.name{
+              color: $cl-blue;
+              font-size: 18px;
+              display: block;
+            }
+            span.adress{
+              color: #8298B9;
+              font-size: 12px;
+              display: block;
+            }
+          }
+        }
+        &:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      }
+      div.row2{
+        // border: 1px solid red;
+        margin-top: 30px;
+        div.flex-container{
+          display: flex;
+          justify-content: space-around;
+          div.flex{
+            text-align: left;
+            width: 100%;
+            div{
+              text-align: left;
+              display: inline-block;
+              span.number{
+                display: block;
+                font-size: 24px;
+                color: $cl-orange;
+              }
+              span.title{
+                display: block;
+                font-size: 10px;
+                color: #343E00;
+              }
+            }
+          }
+          div{
+            button{
+              letter-spacing: 5px;
+              border-radius: 35px;
+              background: $cl-orange;
+              width: 100%;
+              height: 100%;
+              border: none;
+              color: $cl-main-bg;
+              font-weight: 900;
+              padding: 14px 20px;
+              font-size: 14px;
+              outline: none;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    div.comments{
+      height: 670px;
+      padding: 25px 20px 0px 0px;
+      span.hide-comments{
+        margin-left: 20px;
+        color: $cl-orange;
+        text-decoration: underline;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      div.comment{
+        margin-top: 30px;
+        // background: lightgreen;
+        border-bottom: 2px solid #EBEBEB;
+        padding-bottom: 25px;
+        div.row{
+          margin-left: 20px;
+          div.avatar-small{
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            float: left;
+            background-image: url('../images/harvey.jpg');
+            background-position: 40% 10%;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          div.nick{
+            position: relative;
+            float: left;
+            overflow: hidden;
+            width: 300px;
+            height: 40px;
+            span{
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 14px;
+              display: block;
+              margin-left: 12px;
+              color: $cl-blue;
+            }
+          }
+          div.comment-text{
+            margin: 0 0 0 52px;
+            line-height: 20px;
+            font-size: 14px;
+            color: #444444;
+          }
+          &:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+        }
+      }
+    }
+    div.add-comment{
+      padding-right: 20px;
+      input{
+        color: red;
+        margin-top: 42px;
+        margin-left: 20px;
+        border: none;
+        border-bottom: 2px solid #DBE0E8;
+        font-size: 18px;
+        width: 100%;
+        outline: none;
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: #DBE0E8;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+          color: #DBE0E8;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+          color: #DBE0E8;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+          color: #DBE0E8;
+        }
+      }
+    }
+  }
+}
