@@ -18,8 +18,7 @@
   </head>
   <body ng-app="chilidApp" ng-controller="MainCtrl as ctrl">
 
-    <profile person="ctrl.hero"></profile>
-
+    <profile></profile>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -35,11 +34,15 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/components/heroDetail.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/components/profile.js"></script>
+    <script src="scripts/components/personalBar.js"></script>
+    <script src="scripts/components/socialBar.js"></script>
+    <script src="scripts/components/commentBox.js"></script>
+    <script src="scripts/components/addComment.js"></script>
+    <script src="scripts/services/fetchdata.js"></script>
+    <!-- endbuild -->
 </body>
 </html>

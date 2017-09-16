@@ -1,0 +1,20 @@
+
+  <span class="hide-comments">Hide comments ({{$ctrl.commentCount}})</span>
+  <div class="comments">
+    <div class="comment" ng-repeat="comment in $ctrl.comments | orderBy: 'creationDate'">
+      <span class="date">{{$ctrl.getDays(comment.creationDate)}}</span>
+      <div class="row">
+        <div class="avatar-small">
+          <img ng-src="{{comment.avatar}}" alt="{{comment.author}} photo" />
+        </div>
+        <div class="nick">
+          <span>{{comment.author}}</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="comment-text">
+          {{comment.text}}
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Harvey Spectre",
+    "adress": "New York, USA",
+    "social": {
+      "likes": 121,
+      "following": 723,
+      "followers": 4433
+    },
+    "comments": [
+      {
+        "author": "Louis Litt",
+        "avatar": "images/louislitt.jpg",
+        "creationDate": "1505361700973",
+        "text": "Comment no. 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec erat vitae nisi lobortis venenatis. Cras varius, libero non commodo ullamcorper, leo magna fermentum ante, eu ornare felis massa sed justo."
+      },
+      {
+        "author": "Rachel Zane",
+        "avatar": "images/rachelzane.jpg",
+        "creationDate": "1505080800000",
+        "text": "Comment no. 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec erat vitae nisi lobortis venenatis. Cras varius, libero non commodo ullamcorper, leo magna fermentum ante, eu ornare felis massa sed justo."
+      },
+      {
+        "author": "Mike Ross",
+        "avatar": "images/mikeross.jpg",
+        "creationDate": "1504303200000",
+        "text": "Comment no. 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec erat vitae nisi lobortis venenatis. Cras varius, libero non commodo ullamcorper, leo magna fermentum ante, eu ornare felis massa sed justo."
+      }
+    ],
+    "commentCount": 353
+  }
+]

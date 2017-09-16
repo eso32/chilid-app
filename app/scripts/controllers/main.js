@@ -8,8 +8,6 @@
  * Controller of the chilidApp
  */
 angular.module('chilidApp')
-  .controller('MainCtrl', function MainCtrl() {
-    this.hero = {
-      name: 'Spawn'
-    };
+  .controller('MainCtrl',function MainCtrl(){
+
   });

@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="location-window" ng-show="showLocation">
+    <span class="close" ng-click="showLocation ? showLocation = false : showLocation = true">X</span>
+    Adress: <input type="text" name="" value="{{$ctrl.location}}" />
+  </div>
+  <img src="images/arrow.png" alt="share" ng-click="showLocation ? showLocation = false : showLocation = true" />
+  <div class="avatar" ></div>
+  <div class="info">
+    <div>
+      <span class="name">{{$ctrl.personName}} <img ng-click="$ctrl.onAddLike()" src="images/heart.png" alt="like"/> </span>
+      <span class="adress">{{$ctrl.personAdress}}</span>
+    </div>
+  </div>
+</div>

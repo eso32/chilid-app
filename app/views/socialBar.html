@@ -1,0 +1,27 @@
+<div class="row2">
+  <div class="flex-container">
+    <div class="flex">
+      <div>
+        <span class="number">{{$ctrl.social.likes}}</span>
+        <span class="title">Likes</span>
+      </div>
+    </div>
+    <div class="flex">
+      <div>
+        <span class="number">{{$ctrl.social.following}}</span>
+        <span class="title">Following</span>
+      </div>
+
+    </div>
+    <div class="flex last">
+      <div>
+        <span class="number">{{$ctrl.social.followers}}</span>
+        <span class="title">Folowers</span>
+      </div>
+
+    </div>
+    <div>
+      <button ng-click="$ctrl.onAddFollowers()">FOLLOW</button>
+    </div>
+  </div>
+</div>
