@@ -19,17 +19,6 @@ angular.module('chilidApp')
                   }
             }
 
-            this.$onChanges = function (changesObj) {
-              console.log('Changed');
-              if (changesObj.name) {
-                console.log('changed!');
-                // var prefix;
-                // (changesObj.name.currentValue === 'Pascal') ?
-                //   prefix = 'Howdy ' : prefix = 'Hello ';
-                // this.name = prefix + this.name;
-              }
-            };
-
             this.getDays = getDays;
           }
         });

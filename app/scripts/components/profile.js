@@ -3,7 +3,7 @@
 angular.module('chilidApp')
           .component('profile', {
             templateUrl: 'views/profile.html',
-            controller: function (profilesService, $location) {
+            controller: ['profilesService', '$location', function (profilesService, $location) {
               var vm = this;
 
               function addfollowers(){
@@ -32,5 +32,5 @@ angular.module('chilidApp')
               profilesService.getData().then(function(response){
                 vm.person = response.data[0];
               });
-            }
+            }]
         });
