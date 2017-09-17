@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="location-window" ng-show="showLocation">
+  <div class="location-window" ng-class="{animate: showLocation == true}">
     <span class="close" ng-click="showLocation ? showLocation = false : showLocation = true">X</span>
     Adress: <input type="text" name="" value="{{$ctrl.location}}" />
   </div>

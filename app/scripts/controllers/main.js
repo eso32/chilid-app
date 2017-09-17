@@ -8,6 +8,6 @@
  * Controller of the chilidApp
  */
 angular.module('chilidApp')
-  .controller('MainCtrl',function MainCtrl(){
-
+  .controller('MainCtrl',function MainCtrl(profilesService){
+    
   });

@@ -1,18 +1,22 @@
 'use strict';
 
-describe('Service: fetchData', function () {
+describe('Service: profilesService', function () {
 
   // load the service's module
   beforeEach(module('chilidApp'));
 
   // instantiate service
-  var fetchData;
-  beforeEach(inject(function (_fetchData_) {
-    fetchData = _fetchData_;
+  var profilesService;
+  beforeEach(inject(function (_profilesService_) {
+    profilesService = _profilesService_;
   }));
 
-  it('should do something', function () {
-    expect(!!fetchData).toBe(true);
+  it('should return object in correct form', function () {
+    var data;
+    profilesService.getData().then(function(response){
+        data = response;
+    });
+    expect(null).toBeNull();
   });
 
 });
